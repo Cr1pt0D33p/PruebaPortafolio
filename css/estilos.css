@@ -1,0 +1,335 @@
+/**
+body {
+    font-size: 20px; /*la medida siempre debe ser en pixeles (px), tamaño de fuente es font-size
+}**/
+
+body{
+    font-family: 'Poppins'; /**nos permite llamar a la fuente que vamos a utilizar, previamente instalada y llamada en nuestro HTML**/
+    margin: 0; /**quita el margen blanco por defecto**/
+    padding: 0;
+}
+
+li{
+    list-style: none;/*list style es estilo de la lista, none es para que no tenga ningun estilo*/
+    margin-right: 25px;/*nos permite poner un margen*/
+}
+/* Ejemplo de utilizar clases e ID
+.prime-elemento{ /*llamado a la clase de nombre primer.elemento para darle estilo
+    background: aquamarine;
+}
+
+#primero{ /*los id se llaman con el simnolo de gato, sirven como las clases
+    font-size: 30;
+}
+*/
+
+.menu{ /*llamamos a la clase menu para diselar nuestro menu*/
+    display: flex; /*nos permite alinear los elementos una enfrente del otro*/
+    justify-content: space-between; /*justifica el contenido, space-between crea un espaciado entre los elementos*/
+    align-items: center; /*alinea los elementos dentro de menu.*/
+
+}
+
+ul{
+    display: flex;/*como ul contiene la lista, nos permite poner los valores en linea y no en forma de lista*/
+}
+
+.titular{
+    text-align: center;/**alinea todo el texto dentro de titular**/
+    margin-top: 200px; /**nos permite bajar el elemento o bien dar espacio hacia abajo**/
+}
+
+h1{
+    font-size: 60px;/**tamaño de la letra**/
+    margin: 0; /**margen de h1, con 0 aplica para los cuatro margenes**/
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 40px;/**espaciado hacia abajo**/
+}
+
+a{
+    /**
+    text-decoration: none;/**text decoration, decoracion del texto, con none quito el subrayado o cualquier otro diseño
+    color:black; /**para colocar el color del texto**/
+    font-size: 15px;
+    background: aquamarine; /**colocar color de fondo**/
+   /** padding: 20px;/**establece el área de relleno en los cuatro lados de un elemento a la vez. de su fondo**/
+   padding-top: 20px; /**area de relleno de arriba**/
+   padding-bottom: 20px; /**area de relleno de abajo**/
+   padding-left: 30px; /**area de relleno de la izquierda**/
+   padding-right: 30px; /**area de relleno de la derecha**/
+   /**padding: 2opx 30px 20px 30px resresenta o mismo que las 4 lineas anteriores**/
+   text-decoration: none;/**text decoration, decoracion del texto, con none quito el subrayado o cualquier otro diseño**/
+
+    color: white;
+}
+
+header{
+    background: url("../imagenes/fondo.jpg"); /**url: Me permite colocar imagenes de fondo colocando la ruta**/
+    height: 100vh; /**vh: viewport (ventana del navegador), height (altura), con esto decimos que ocupe que 100 porciento del alto
+    de la ventana **/
+    background-size: cover; /**adapta la imagen a la ventana, tamaño de la pantalla**/
+}
+
+.contenedor{
+    max-width: 1280px; /**tamaño estandar de las pantallas**/
+    width: 90%; /**para que os elemntos esten mas compactos y no queden a la horilla de cada esquina**/
+    margin: auto; /**para respetar el centrado de los elementos**/
+}
+
+/**Seccion sobre mi diseño clase contenedorS**/
+h3{
+    text-align: center; /**alinea al centro el texto**/
+    font-size: 55px; /**tamaño del texto**/
+    font-weight: normal; /**peso de la fuentem quita la fuente en negritas**/
+}
+.contenedorS{
+    display: flex; /**para alinear los elementos dentro de la clase**/
+    justify-content: space-around;
+    align-items: center; /**alinea los elementos verticalmente**/
+}
+
+.contenedorS img{
+    width: 300px;
+}
+
+.contenedorParrafoyBoton{
+    width: 42%; /**tamaño del ancho que ocupara cada elemento**/
+}
+
+.contenedorParrafoyBoton p{ /**aplica cambios solo en los elementos dentro de la etiqueta p dentro de contenedorParrafoyBoton**/
+ font-size: 18px;
+ margin-bottom: 10px;
+}
+
+.contenedorParrafoyBoton a{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.contenedor-servicios{
+    display: flex; /**alinea los elementos**/
+    flex-wrap: wrap; /**coloca un elemento por linea si es muy grande**/
+    justify-content: space-around;
+}
+
+.servicio {
+    width: 25%; /**Tamaño que abarca cada elemento en pantalla**/
+    padding: 38px; /**suma al ancho del elemento**/
+    border-radius: 10px; /**hace los bordes redondos**/
+    margin-bottom: 30px; /**Da un espacio entre elementos**/
+    color: blue; /**Color de todo el contenido dentro de la clase servicio**/
+}
+
+.violeta{
+    background: aqua;
+}
+
+.celeste{
+    background: cornflowerblue;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+.servico img{
+    float: right;
+}
+
+.servicio o{
+    font-size: 18px;
+}
+
+/**etiqueta que contine las flecas de nuestra galeria**/
+span {
+    font-size: 80px;
+    color: blue;
+}
+
+.owl-nav{
+    text-align: center;
+}
+
+.contenedor-porque{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contenedor-porque h4{
+    margin: 0;
+    font-size: 20px;
+}
+
+.contenedor-porque p{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.porque-singular{
+    width: 25%;
+}
+
+#blog {
+    background: #f9fafc;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.contenedor-publicaciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicaciones{
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;/**Genera una sombra**/
+    padding-bottom: 20px;
+}
+
+#blog img{
+ width: 100%;
+}
+
+#blog h4{
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
+}
+
+#blog p{
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+
+#blog a{
+    display: inline-block;
+    margin-left: 20px;
+}
+.publi-segunda img{
+    height: 245px;
+}
+
+#que-esperas{
+    background: linear-gradient(rgb(84,93,220),rgb(96,171,245));
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+#que-esperas h3{
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#que-esperas a{
+    padding: 15px 35px 15px 35px;
+}
+
+#que-esperas a:hover { /*Hover para dar efecto a nuestro boton*/
+    color: black;
+    transition: 1s;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+.menu-icon {
+    display: none; /*oculta en pantalla lo que esta ne la clase menu-icon*/
+}
+
+/*Responsivo*/
+@media (max-width: 480px){
+    /*se aplica cuando el maximo de ancho sea 480px*/
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #5cb8ff;
+        width: 100%;
+        display: none;
+    }
+
+    nav .lista{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 24px;
+    }
+
+    .titular{
+        margin-top: 50px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .contenedorS{
+        flex-direction: column;
+    }
+
+    .contenedorParrafoyBoton{
+        width: 90%;
+    }
+
+    .contenedor-servicios{
+        flex-direction: column;
+    }
+
+    .servicio{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 45px;
+    }
+
+    .contenedor-porque{
+        flex-direction: column;
+    }
+
+    .porque-singular{
+        width: 95%;
+    }
+
+    .contenedor-publicaciones{
+        flex-direction: column;
+    }
+
+    .publicaciones{
+        width: 85%;
+        margin: auto;
+    }
+
+    .trabajar h3{
+        font-size: 30px;
+    }
+
+    .titular{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    header{
+        width: auto !important;
+    }
+}

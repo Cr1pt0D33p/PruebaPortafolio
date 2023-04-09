@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Etiqueta que menciona el idioma que se utiliza-->
+<head>
+    <meta charset="UTF-8"> <!--Etiqueta que representa la codificacion del lenguaje para los caracteres especiales-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 1 2023</title>
+
+<link rel="stylesheet" href="css/estilos.css"> <!--Etiqueta para vimcular el css, rel significa la relacion, stylesheet menciona
+que es una hoja de estilos, href para dar la referencia al archivo.-->
+
+<!--Link de referencia para usar la fuente poppins de fonts.google.com-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<!--Instalamos o bien llamamaos a las librerias necesarias para nuestro carrusel, en este caso utilizaos uno de OWL
+Descargar de la pagina de OWL desde google-->
+<link rel="stylesheet" href="carrusel/owl.carousel.min.css">
+<link rel="stylesheet" href="carrusel/owl.theme.default.min.css">
+
+<!--Libreria para usar iconos de la pagina font aweson cdn
+https://cdnjs.com/libraries/font-awesome-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+<!--Etiqueta meta para hacer responsiva nuestra pagina web, user-scalable para que no puedan hacer zoom el usuario
+viesport para seleccionar toda la ventana(pantalla)-->
+<meta name="viewport" content="width=device-width", user-scalable="no">
+</head>
+<body>
+
+    <header><!--Etiqueta de encabezaso para divicer o contener elementos-->
+
+<div class="contenedor">
+
+    <div class="menu"> <!--Etiqueta div  define las divisiones lógicas existentes en el contenido de una página web-->
+        <p>Primer portafolio</p>
+        <img class="menu-icon" src="imagenes/menu.png">
+        <!--Etiqueta de menu de navegación-->
+        <nav>
+          <!--Etiqueta para la istas ol es para lista ordenada (ordent list), ul lista desordenada-->
+          <ul class="lista">
+            <li>Sobre mi</li>
+            <li>Galeria</li>
+            <li>Contacto</li>
+          </ul>  
+
+        </nav>
+    </div>
+    <!--Diseño para el titular-->
+    <div class="titular">
+        <h1>Héctor Abraham Fernández Martínez</h1>
+        <h2>Ingeniero en Sistemas Computacionales</h2>
+        <!--target _black permite abrir en una nueva ventana
+        Para abrir paginas externas se debe escribir con httpsm por ejemplo: https://www.google.com.mx-->
+        <a href="" target="_blank">Ver mis trabajos</a>
+    </div>
+
+</div>
+    </header>
+
+    <section> <!--Etriqueta que permite dividir en seciones la informacion de la pagina-->
+        <h3>Sobre mi</h3>
+    
+    <div class="contenedorS">
+        <!--img permite colocar imagenes, alt es para el posicionamiento en google, para que google lo vincule,
+        title es para qeu salga el titulo al pasar el mouse por la imagen.-->
+        <img class="img-yo" src="imagenes/YoVestir.jpg" alt="Héctor Fernández" title="Héctor Fernández">
+       
+        <div class="contenedorParrafoyBoton">
+            <p>Objetivo: Seguir creciendo personal y académicamente para reforzar mis conocimientos, transmitirlos y aplicarlos dentro de la empresa o institución para el mejoramiento de las tareas a mi cargo.         
+            </p>
+            <p>Ver Mis trabajos</p>
+        </div>
+
+    </div>
+
+    </section>
+
+    <section> <!--Segunda seccion-->
+
+        <div class="contenedor">
+            <h3>Servicios</h3>
+           
+        <div class="contenedor-servicios">
+
+            <div class="servicio violeta"> <!--El espacio permite colocar mas de dos clases en este caso la primera es servicio y la segunda violeta-->
+                <h4>Desarrollador Web</h4>
+                <p>El diseño de páginas web ha sido una de las profesiones con mayor incremento en años recientes, y no es de extrañarse; si lo pensamos, todo el mundo tiene una página web en estos días.
+                </p>
+            </div>
+
+            <div class="servicio celeste">
+                <h4>Soporte tecnico</h4>
+                <p>El diseño de páginas web ha sido una de las profesiones con mayor incremento en años recientes, y no es de extrañarse; si lo pensamos, todo el mundo tiene una página web en estos días.
+                </p>
+            </div>
+
+            <div class="servicio violeta">
+                <h4>Mantenimiento</h4>
+                <p>El diseño de páginas web ha sido una de las profesiones con mayor incremento en años recientes, y no es de extrañarse; si lo pensamos, todo el mundo tiene una página web en estos días.
+                </p>
+            </div>
+
+            <div class="servicio celeste">
+                <h4>Docente</h4>
+                <p>El diseño de páginas web ha sido una de las profesiones con mayor incremento en años recientes, y no es de extrañarse; si lo pensamos, todo el mundo tiene una página web en estos días.
+                </p>
+            </div>
+
+            <div class="servicio violeta">
+                <h4>Tutor</h4>
+                <p>El diseño de páginas web ha sido una de las profesiones con mayor incremento en años recientes, y no es de extrañarse; si lo pensamos, todo el mundo tiene una página web en estos días.
+                </p>
+            </div>
+
+            <div class="servicio celeste">
+                <h4>Responsivo</h4>
+                <p>El diseño de páginas web ha sido una de las profesiones con mayor incremento en años recientes, y no es de extrañarse; si lo pensamos, todo el mundo tiene una página web en estos días.
+                </p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="contenedor">
+            <!--copiar el codigo set HTML que se encuentra en la pagina de OWL de la instalacion
+            https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html--> 
+            <h3>Mis Trabajos</h3>
+            <div class="owl-carousel">
+                <div> <img src="imagenes/carrusel/1.jpg"> </div>
+                <div> <img src="imagenes/carrusel/2.jpg"> </div>
+                <div> <img src="imagenes/carrusel/3.jpg"> </div>
+                <div> <img src="imagenes/carrusel/4.jpg"> </div>
+                <div> <img src="imagenes/carrusel/5.jpg"> </div>
+                <div> <img src="imagenes/carrusel/6.jpg"> </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="trabajar"> <!--Tercer seccion-->
+        <div class="cotenedor">
+            <h3>¿Por que trabajar conmigo?</h3>
+        <div class="contenedor-porque">
+            <div class="porque-singular">
+                <img src="imagenes/fondo.jpg" width="100px" height="75px">
+                <h4>Velocidad</h4>
+                <p>Magnitud determinada por la cantidad de trabajo realizada en un periodo de tiempo. Velocidad en scrum técnico es la cantidad de trabajo realizada por el equipo en un sprint. </p>
+
+            </div>
+
+            <div class="porque-singular">
+                <img src="imagenes/fondo.jpg" width="100px" height="75px">
+                <h4>Mantenimiento</h4>
+                <p>Se define el mantenimiento como todas las acciones que tienen como objetivo preservar un artículo o restaurarlo a un estado en el cual pueda llevar a cabo alguna función requerida.​</p>
+
+            </div>
+
+            <div class="porque-singular">
+                <img src="imagenes/fondo.jpg" width="100px" height="75px">
+                <h4>Movil</h4>
+                <p>Un teléfono móvil o teléfono celular es un dispositivo portátil que puede hacer o recibir llamadas a través de una portadora de radiofrecuencia, mientras el usuario se está moviendo dentro de un área de servicio telefónico.</p>
+
+            </div>
+
+        </div>
+        </div>
+        
+    </section>
+
+    <section id="blog"> <!--Cuarta seccion-->
+        <div class="contenedor">
+            <h3>Blog</h3>
+
+            <div class="contenedor-publicaciones publi-segunda">
+                <div class="publicaciones">
+                    <img src="imagenes/fondo.jpg" width="100px" height="75px">
+                    <h4>No alcanza con solo tener una pagina web</h4>
+                    <p>¿Que es una pagina web</p>
+                    <!--colocamos el codigo del icon dentro de la etiqueta a-->
+                    <a href="">Leer mas <i class="fa-solid fa-arrow-right fa-beat" style="color: #1953b8;"></i></a>
+                </div>
+
+                <div class="publicaciones">
+                    <img src="imagenes/fondo.jpg" width="100px" height="75px">
+                    <h4>Las personas con mayor conocimiento son hackers</h4>
+                    <p>¿Que es un hacker?</p>
+                    <!--colocamos el codigo del icon dentro de la etiqueta a-->
+                    <a href="">Leer mas <i class="fa-solid fa-arrow-right fa-beat" style="color: #1953b8;"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="que-esperas">
+        <div class="contenedor">
+            <h3>¿Qué esperas para tener tu propia pagina web?</h3>
+            <a href="">YouTube</a>
+        </div>
+    </section>
+
+
+    <!--JavaScript de OWL para utilizar el carrusel-->
+    <script src="carrusel/jquery.min.js"></script> <!--Descargar el codigo de jquery desde google y generar una rchivo con el nombre
+    de la referencia y guardarlo en la ruta de nuestra carpeta-->
+    <script src="carrusel/owl.carousel.min.js"></script>
+    
+    <!--codigo Script de la pagina OWL para usar el carrusel en la parte de instalacion
+    https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html 
+    en el apartyado de demos podremos encontrar mas efectos de transicion-->
+    <script>
+    $('.owl-carousel').owlCarousel({
+       loop:true,
+       margin:10,
+       nav:true,
+       responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+             items:4
+          }
+     }
+    })
+
+    /*Funcion de java script para la imagen de menu*/
+$('.menu-icon').click(function(){
+
+    $('header nav').slideToggle();
+})
+
+    </script>
+
+</body>
+</html>
