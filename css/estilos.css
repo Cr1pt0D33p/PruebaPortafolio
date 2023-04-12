@@ -36,7 +36,7 @@ ul{
 
 .titular{
     text-align: center;/**alinea todo el texto dentro de titular**/
-    margin-top: 200px; /**nos permite bajar el elemento o bien dar espacio hacia abajo**/
+    margin-top: 100px; /**nos permite bajar el elemento o bien dar espacio hacia abajo**/
 }
 
 h1{
@@ -46,6 +46,7 @@ h1{
 
 h2{
     font-size: 25px;
+    margin-top: 0;
     margin-bottom: 40px;/**espaciado hacia abajo**/
 }
 
